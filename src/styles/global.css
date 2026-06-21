@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geologica", "system-ui", "sans-serif";
+  --font-logo: "Impact", "sans-serif";
+
+  --color-gradient-yellow: #EEBB3B;
+  --color-gradient-red: #B92E2B;
+  --color-tb-blue: #1E459F;
+  --color-tb-red: #CF2A2A;
+  --color-tb-beige: #E1DCCA;
+  --color-tb-brown: #78350f;
+  --color-sunset-gold: #EEBB3B;
+  --color-sunset-red: #B92E2B;
+  --color-footer-blue: #143D73;
+  --color-footer-gold: #DEA921;
+}

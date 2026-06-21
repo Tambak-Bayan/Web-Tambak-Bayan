@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Tambak Bayan GO-WEB - Kategori Mural" description="Pilih kategori mural: Kritik Sosial, Budaya Lokal, atau Kehidupan Sehari-Hari.">
+  <style>
+    .kategori-card {
+      position: relative;
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+      cursor: pointer;
+      height: 200px;
+      display: block;
+      text-decoration: none;
+      border: 2px solid rgba(120, 53, 15, 0.25);
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.28);
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+    }
+    @media (min-width: 640px) { .kategori-card { height: 220px; } }
+    @media (min-width: 1024px) { .kategori-card { height: 240px; } }
+    .kategori-card:hover { transform: translateY(-4px) scale(1.005); box-shadow: 0 14px 40px rgba(0, 0, 0, 0.42); }
+    .kategori-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.4s ease;
+    }
+    .kategori-card:hover img { transform: scale(1.04); }
+    .kategori-card .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.22) 50%, rgba(0, 0, 0, 0.08) 100%);
+      z-index: 1;
+    }
+    .kategori-card .card-label {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .kategori-card .card-label span {
+      font-weight: 700;
+      color: #ffffff;
+      font-size: clamp(1.35rem, 3.5vw, 2rem);
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+      letter-spacing: 0.01em;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  </style>
+
+  <section class="w-full px-5 sm:px-8 md:px-12 lg:px-20 py-10 sm:py-12 md:py-14" aria-label="Kategori Mural">
+    <div class="max-w-4xl mx-auto flex flex-col gap-6 sm:gap-7 md:gap-8">
+      <a href="/detail-koleksi-mural/kritik-sosial/" class="kategori-card" aria-label="Lihat koleksi mural Kritik Sosial">
+        <img src="/assets/koleksi-mural/Kritik Sosial.webp" alt="Mural Kritik Sosial" loading="eager" />
+        <div class="card-overlay"></div>
+        <div class="card-label"><span>Kritik Sosial</span></div>
+      </a>
+      <a href="/detail-koleksi-mural/budaya-lokal/" class="kategori-card" aria-label="Lihat koleksi mural Budaya Lokal">
+        <img src="/assets/koleksi-mural/Budaya Lokal.webp" alt="Mural Budaya Lokal" loading="lazy" />
+        <div class="card-overlay"></div>
+        <div class="card-label"><span>Budaya Lokal</span></div>
+      </a>
+      <a href="/detail-koleksi-mural/kehidupan-sehari-hari/" class="kategori-card" aria-label="Lihat koleksi mural Kehidupan Sehari-Hari">
+        <img src="/assets/koleksi-mural/Kehidupan Sehari-hari.webp" alt="Mural Kehidupan Sehari-Hari" loading="lazy" />
+        <div class="card-overlay"></div>
+        <div class="card-label"><span>Kehidupan Sehari - Hari</span></div>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

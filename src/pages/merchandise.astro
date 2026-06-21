@@ -1,0 +1,25 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <BaseHead title="Merchandise - Tambak Bayan GO-WEB" description="Merchandise dan produk lokal Tambak Bayan." />
+  </head>
+  <body class="font-sans antialiased min-h-screen flex flex-col">
+    <Navbar />
+    <main class="flex-1 w-full bg-gradient-to-b from-[#FABD32] to-[#E88D37] flex flex-col items-center pt-16 pb-32 px-4 relative overflow-hidden">
+      <h1 class="text-[#1E459F] font-bold text-2xl md:text-3xl uppercase tracking-wider mb-12 text-center drop-shadow-sm z-10">
+        MERCHANDISE
+      </h1>
+      <div class="relative z-10 max-w-lg w-full transform hover:scale-105 transition-transform duration-500">
+        <img src="/assets/Agenda/Agenda_Coming Soon.webp" alt="Coming Soon" class="w-full h-auto object-contain drop-shadow-2xl opacity-90 hover:opacity-100 transition-opacity" />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

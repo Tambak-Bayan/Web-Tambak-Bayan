@@ -1,0 +1,54 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import MuralCard from "../../components/MuralCard.astro";
+import "../../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <BaseHead title="Tambak Bayan GO-WEB - Mural Kehidupan Sehari-Hari" description="Koleksi Mural Kehidupan Sehari-Hari Tambak Bayan." />
+    <style>
+      @keyframes fadeSlideUp {
+        from { opacity: 0; transform: translateY(32px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-gray-900 min-h-screen">
+    <main class="w-full min-h-screen overflow-x-hidden" style="background: linear-gradient(180deg, #EEBB3B 0%, #e0a020 30%, #c96418 65%, #B92E2B 100%);">
+      <Navbar />
+
+      <section class="w-full pt-10 pb-2 text-center px-5">
+        <h1 class="font-bold text-[#1E459F] text-2xl sm:text-3xl md:text-4xl tracking-wide drop-shadow-sm" style="animation: fadeSlideUp 0.4s ease both;">
+          Kehidupan Sehari-Hari
+        </h1>
+        <div class="mx-auto mt-3 w-16 h-1 rounded-full bg-[#1E459F]/60"></div>
+      </section>
+
+      <section class="w-full px-6 sm:px-10 md:px-16 lg:px-20" aria-label="Koleksi Mural Kehidupan Sehari-Hari">
+        <div class="max-w-4xl mx-auto" style="display: flex; flex-direction: column; gap: 60px; padding: 40px 0;">
+          <MuralCard src="/assets/koleksi-mural/kehidupan-sehari-hari/KE_1.webp" alt="Mural Kehidupan Sehari-Hari 1"
+            title="Dari Kayu Menjadi Kehidupan" artist="Pelukis" year="2024"
+            description="Merepresentasikan aktivitas warga pada masa lampau yang mayoritas pekerjanya yaitu tukang kayu." />
+          <MuralCard src="/assets/koleksi-mural/kehidupan-sehari-hari/KE_2.webp" alt="Mural Kehidupan Sehari-Hari 2"
+            title="Karya Kelompok Mahasiswa UC" artist="Mahasiswa Universitas Ciputra" year="2024"
+            description="Mural sebagai bentuk perwujudan dan harapan lingkungan yang harmonis dari variasi gambar secara tersirat." />
+          <MuralCard src="/assets/koleksi-mural/kehidupan-sehari-hari/KE_3.webp" alt="Mural Kehidupan Sehari-Hari 3"
+            title="Karya Kelompok Mahasiswa & Permintaan Warga" artist="Mahasiswa Universitas Ciputra" year="2024"
+            description="Menunjukkan kegiatan warga Kampung Tambak Bayan yang sedang merayakan Imlek dengan ciri khasnya yaitu barongsai dan makan besar bersama keluarga maupun kerabat." />
+          <MuralCard src="/assets/koleksi-mural/kehidupan-sehari-hari/KE_4.webp" alt="Mural Kehidupan Sehari-Hari 4"
+            title="Karya Kelompok Mahasiswa & Permintaan Warga" artist="Mahasiswa Universitas Ciputra" year="2024"
+            description="Menggambarkan kehidupan sehari-hari yang dilakukan yaitu berjualan berbagai macam kebutuhan. Hal ini juga menunjukkan bahwa sebagian warga Kampung Tambak Bayan merupakan pedagang." />
+          <MuralCard src="/assets/koleksi-mural/kehidupan-sehari-hari/KE_5.webp" alt="Mural Kehidupan Sehari-Hari 5"
+            title="Karya kelompok mahasiswa Universitas Ciputra" artist="Mahasiswa Universitas Ciputra" year="2024"
+            description="Digambarkan sebagai harapan agar warga Tambak Bayan tetap seger (segar) dan waras (sehat), atau fisik dan mental dalam keadaan baik." />
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  </body>
+</html>

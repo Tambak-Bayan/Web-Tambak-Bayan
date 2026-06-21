@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BeritaCard from "../../components/BeritaCard.astro";
+---
+
+<BaseLayout title="Berita - Tambak Bayan GO-WEB" description="Berita dan artikel terkini seputar Kampung Tambak Bayan, mural, dan komunitas.">
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <h1 class="text-center text-[#1E459F] font-bold text-2xl sm:text-3xl md:text-4xl mb-8 md:mb-12">
+      ARTIKEL BERITA
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_17.webp"
+        title="[Judul Berita 17]"
+        href="#artikel-17"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 17]"
+      />
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_18.webp"
+        title="[Judul Berita 18]"
+        href="#artikel-18"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 18]"
+      />
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_19.webp"
+        title="[Judul Berita 19]"
+        href="#artikel-19"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 19]"
+      />
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_20.webp"
+        title="[Judul Berita 20]"
+        href="#artikel-20"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 20]"
+      />
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_21.webp"
+        title="[Judul Berita 21]"
+        href="#artikel-21"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 21]"
+      />
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_22.webp"
+        title="[Judul Berita 22]"
+        href="#artikel-22"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 22]"
+      />
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_23.webp"
+        title="[Judul Berita 23]"
+        href="#artikel-23"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 23]"
+      />
+      <BeritaCard
+        imgSrc="/assets/berita/Berita_24.webp"
+        title="[Judul Berita 24]"
+        href="#artikel-24"
+        date="[Tanggal]"
+        excerpt="[Deskripsi berita 24]"
+      />
+    </div>
+
+    <nav class="flex justify-center items-center gap-2 mt-10 md:mt-14" aria-label="Pagination">
+      <a href="/berita/halaman-2/" class="px-4 py-2.5 rounded-lg text-[#1E459F] font-medium bg-white border border-gray-200 hover:bg-[#1E459F]/10 transition-colors shadow-sm" aria-label="Halaman sebelumnya">
+        <i class="fas fa-angles-left"></i>
+      </a>
+      <a href="/berita/" class="min-w-[2.75rem] py-2.5 rounded-lg text-[#1E459F] font-medium bg-white border border-gray-200 hover:bg-[#1E459F]/10 transition-colors text-center shadow-sm">1</a>
+      <a href="/berita/halaman-2/" class="min-w-[2.75rem] py-2.5 rounded-lg text-[#1E459F] font-medium bg-white border border-gray-200 hover:bg-[#1E459F]/10 transition-colors text-center shadow-sm">2</a>
+      <a href="/berita/halaman-3/" class="min-w-[2.75rem] py-2.5 rounded-lg bg-[#1E459F] text-white font-semibold text-center shadow-sm">3</a>
+      <a href="/berita/halaman-3/" class="px-4 py-2.5 rounded-lg text-[#1E459F] font-medium bg-white border border-gray-200 hover:bg-[#1E459F]/10 transition-colors shadow-sm" aria-label="Halaman berikutnya">
+        <i class="fas fa-angles-right"></i>
+      </a>
+    </nav>
+  </section>
+</BaseLayout>

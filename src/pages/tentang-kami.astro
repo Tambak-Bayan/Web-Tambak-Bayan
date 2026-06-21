@@ -1,0 +1,202 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Tentang Kami - Tambak Bayan GO-WEB" description="Kampung Tambak Bayan, profil, sejarah, dan Institut Seni Tambak Bayan.">
+  <style>
+    .hover-card .card-text {
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    @media (hover: none) {
+      .hover-card .card-text {
+        opacity: 0 !important;
+        transform: translateY(4px) scale(0.95) !important;
+        pointer-events: none;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        max-height: 100%;
+        scrollbar-width: thin;
+      }
+      .hover-card.touched .card-text {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+        pointer-events: auto;
+      }
+      .hover-card .card-desc {
+        display: none;
+      }
+      .hover-card.touched .card-desc {
+        display: block;
+      }
+    }
+  </style>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 md:pt-10 pb-4 md:pb-8 space-y-6 md:space-y-8">
+    <!-- Card 1: Kampung Tambak Bayan (Hero) -->
+    <article class="hover-card group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl w-full max-w-[1267px] h-[260px] sm:h-[420px] md:h-[580px]">
+      <img src="/assets/tentang-kami/_MG_2474.webp" alt="Kampung Tambak Bayan" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"></div>
+      <div class="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 md:p-10 text-[#EEBB3B] overflow-hidden">
+        <div class="card-text opacity-0 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 text-left">
+          <h2 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black mb-2">Kampung Tambak Bayan</h2>
+          <p class="text-sm sm:text-base md:text-lg text-[#EEBB3B] max-w-6xl">
+            Menghadirkan mural dan kuliner sebagai bagian dari keseharian.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2: Profil -->
+    <article class="hover-card group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl w-full max-w-[1267px] h-[260px] sm:h-[420px] md:h-[580px]">
+      <img src="/assets/tentang-kami/IMG_20250710_144357.webp" alt="Profil Tambak Bayan" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-50 group-hover:opacity-85 transition-opacity duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-start p-6 sm:p-8 md:p-10 overflow-hidden">
+        <div class="card-text opacity-0 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 transform scale-100 md:scale-95 md:group-hover:scale-100 text-left max-w-4xl">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-[#EEBB3B]">Profil</h2>
+          <p class="mt-2 text-sm sm:text-base md:text-lg text-[#EEBB3B] hidden sm:block leading-relaxed max-w-4xl card-desc">
+            Kampung Tambak Bayan berada di Kelurahan Alun-Alun Contong, Kecamatan Bubutan, Kota Surabaya, dan telah
+            dihuni secara turun-temurun sebagai ruang hidup warga. Selain sebagai permukiman, kampung ini dikenal
+            dengan mural-mural di sepanjang gang serta kuliner rumahan yang tumbuh dari aktivitas warganya.
+            <br><br>
+            Kampung Tambak Bayan berada di RW 2 yang terbagi menjadi 7 RT dan merupakan gabungan dari wilayah Tambak
+            Bayan, Pasar Besar, dan Kepatihan. Saat ini, RW 2 dikelola oleh warga Tambak Bayan dengan jumlah sekitar
+            600–700 kepala keluarga, yang mayoritas merupakan warga lama.
+            <br><br>
+            Dalam kehidupan sehari-hari, warga Kampung Tambak Bayan hidup berdampingan dengan latar belakang yang
+            beragam. Warga saling mengenal dan menjaga satu sama lain, sehingga suasana kampung tetap terjaga hingga
+            sekarang.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 3: Sejarah -->
+    <article class="hover-card group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl w-full max-w-[1267px] h-[260px] sm:h-[420px] md:h-[580px]">
+      <img src="/assets/tentang-kami/_MG_2489.webp" alt="Sejarah Tambak Bayan" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-50 group-hover:opacity-85 transition-opacity duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-start p-6 sm:p-8 md:p-10 overflow-hidden">
+        <div class="card-text opacity-0 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 transform scale-100 md:scale-95 md:group-hover:scale-100 text-left max-w-4xl">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-[#EEBB3B]">Sejarah</h2>
+          <p class="mt-2 text-sm sm:text-base md:text-lg text-[#EEBB3B] hidden sm:block leading-relaxed max-w-4xl card-desc">
+            Kampung Tambak Bayan merupakan kampung pecinan yang telah ada sejak masa kolonial dan tercatat dalam peta
+            lama. Kawasan ini berkembang sebagai permukiman warga di luar Tembok Belanda dan dihuni secara
+            turun-temurun.
+            <br><br>
+            Sejak awal, Kampung Tambak Bayan menjadi ruang hidup warga dengan beragam mata pencaharian, seperti tukang
+            kayu, penjahit, pembuat kue, dan pedagang kecil. Kehidupan kampung berjalan lintas generasi dan menjadi
+            bagian dari sejarah kawasan ini.
+            <br><br>
+            Kampung Tambak Bayan juga mengalami berbagai peristiwa sejarah, mulai dari masa kolonial, pendudukan
+            Jepang, hingga awal kemerdekaan. Cerita tentang bangunan peninggalan Belanda dan bunker yang pernah ada
+            masih tersimpan dalam ingatan warga generasi lama.
+            <br><br>
+            Permasalahan sengketa lahan muncul setelah Hotel Veni Vidi Vici berdiri di kawasan Kampung Pecinan Tambak
+            Bayan. Wilayah kampung kemudian diklaim dengan dasar Sertifikat Hak Guna Bangunan (SHGB), meskipun warga
+            telah lama menetap dan rutin membayar Pajak Bumi dan Bangunan (PBB). Sengketa ini menjadi bagian dari
+            perjalanan Kampung Tambak Bayan hingga saat ini.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 4: Institut Seni Tambak Bayan -->
+    <article class="hover-card group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl w-full max-w-[1267px] h-[260px] sm:h-[420px] md:h-[580px]">
+      <img src="/assets/tentang-kami/_MG_2404.webp" alt="Institut Seni Tambak Bayan" class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-50 group-hover:opacity-85 transition-opacity duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-start p-6 sm:p-8 md:p-10 overflow-hidden">
+        <div class="card-text opacity-0 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 transform scale-100 md:scale-95 md:group-hover:scale-100 text-left max-w-4xl">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-[#EEBB3B] leading-tight">Institut Seni Tambak Bayan</h2>
+          <p class="mt-2 text-sm sm:text-base md:text-lg text-[#EEBB3B] hidden sm:block leading-relaxed max-w-4xl card-desc">
+            Institut Seni Tambak Bayan atau ISTB merupakan komunitas yang tumbuh dari keterlibatan mahasiswa,
+            akademisi, dan pegiat seni yang sejak lama berproses bersama warga Kampung Tambak Bayan. Hubungan ini
+            kemudian berkembang menjadi wadah bersama.
+            <br><br>
+            ISTB resmi terbentuk pada Juni 2022 atas inisiatif akademisi, alumni, pegiat seni, dan warga. Anggotanya
+            berasal dari berbagai latar belakang dan bersifat terbuka bagi siapa pun yang peduli terhadap Kampung
+            Tambak Bayan.
+            <br><br>
+            ISTB berperan mendukung kegiatan kampung melalui mural, pengisian acara seperti perayaan Imlek dan
+            festival lampion, serta pameran karya dan benda-benda lama milik warga yang merekam sejarah kampung.
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Jejak Mural Section -->
+  <section class="w-full mt-10 md:mt-14">
+    <div>
+      <h2 class="text-center text-xl sm:text-2xl md:text-3xl font-bold text-[#143D73] mb-6 md:mb-8">
+        Jejak Mural
+      </h2>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
+      <div class="relative flex items-center gap-4">
+        <button type="button" class="jejak-prev flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#1E459F] text-white border-2 border-white shadow-lg hover:bg-[#163a87] transition-colors flex items-center justify-center" aria-label="Mural sebelumnya">
+          <i class="fas fa-chevron-left text-lg"></i>
+        </button>
+        <div class="flex-1 overflow-hidden rounded-2xl md:rounded-3xl shadow-xl">
+          <div class="jejak-track flex transition-transform duration-500 ease-out">
+            <div class="jejak-slide flex-shrink-0 w-full aspect-video md:aspect-[21/9]">
+              <img src="/assets/tentang-kami/IMG_20250710_151718.webp" alt="Mural Tambak Bayan 1" class="w-full h-full object-cover" />
+            </div>
+            <div class="jejak-slide flex-shrink-0 w-full aspect-video md:aspect-[21/9]">
+              <img src="/assets/tentang-kami/IMG_20250710_144357.webp" alt="Mural Tambak Bayan 2" class="w-full h-full object-cover" />
+            </div>
+            <div class="jejak-slide flex-shrink-0 w-full aspect-video md:aspect-[21/9]">
+              <img src="/assets/tentang-kami/_MG_2462.webp" alt="Mural Tambak Bayan 3" class="w-full h-full object-cover" />
+            </div>
+            <div class="jejak-slide flex-shrink-0 w-full aspect-video md:aspect-[21/9]">
+              <img src="/assets/tentang-kami/_MG_2461.webp" alt="Mural Tambak Bayan 4" class="w-full h-full object-cover" />
+            </div>
+            <div class="jejak-slide flex-shrink-0 w-full aspect-video md:aspect-[21/9]">
+              <img src="/assets/tentang-kami/_MG_2535.webp" alt="Mural Tambak Bayan 5" class="w-full h-full object-cover" />
+            </div>
+            <div class="jejak-slide flex-shrink-0 w-full aspect-video md:aspect-[21/9]">
+              <img src="/assets/tentang-kami/_MG_2538.webp" alt="Mural Tambak Bayan 6" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+        <button type="button" class="jejak-next flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#1E459F] text-white border-2 border-white shadow-lg hover:bg-[#163a87] transition-colors flex items-center justify-center" aria-label="Mural berikutnya">
+          <i class="fas fa-chevron-right text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      // Touch fallback for hover cards
+      if (window.matchMedia('(hover: none)').matches) {
+        document.querySelectorAll('.hover-card').forEach(function (card) {
+          card.addEventListener('click', function () {
+            this.classList.toggle('touched');
+          });
+        });
+      }
+
+      // Jejak Mural carousel
+      var track = document.querySelector('.jejak-track');
+      var slides = document.querySelectorAll('.jejak-slide');
+      var prev = document.querySelector('.jejak-prev');
+      var next = document.querySelector('.jejak-next');
+      if (!track || !slides.length) return;
+      var current = 0;
+      var total = slides.length;
+      function update() {
+        track.style.transform = 'translateX(-' + current * 100 + '%)';
+      }
+      if (next) next.addEventListener('click', function () { current = (current + 1) % total; update(); });
+      if (prev) prev.addEventListener('click', function () { current = (current - 1 + total) % total; update(); });
+      var autoplayInterval = setInterval(function () {
+        current = (current + 1) % total;
+        update();
+      }, 6000);
+      var container = track && track.parentElement;
+      if (container) {
+        container.addEventListener('mouseenter', function () { clearInterval(autoplayInterval); });
+        container.addEventListener('mouseleave', function () { autoplayInterval = setInterval(function () { current = (current + 1) % total; update(); }, 6000); });
+      }
+    })();
+  </script>
+</BaseLayout>
